@@ -17,8 +17,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTextBox: UITextField!
     @IBOutlet weak var statusMessageLabel: UILabel!
     
-    // testing
-    
     // MARK: Signup Button
     // ----------------------
     @IBAction func signupButtonPressed(_ sender: Any) {
@@ -83,7 +81,7 @@ class ViewController: UIViewController {
                 print("Email: \(user?.user.email)")
                 
                 // 2. So send them to screen 2!
-                self.performSegue(withIdentifier: "segueA", sender: nil)
+                self.performSegue(withIdentifier: "segB", sender: self)
             }
             else {
                 // 1. A problem occured when looking up  the user

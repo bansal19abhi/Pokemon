@@ -16,6 +16,12 @@
 		05A8E02B21A24A1F00BEB0A4 /* MessageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05A8E02C21A24A1F00BEB0A4 /* MessageKit.framework */; };
 		6CEA004D21B34F3800E3644F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CEA004C21B34F3800E3644F /* GoogleService-Info.plist */; };
 		88E408ECB5D946105F76F326 /* Pods_FirebaseExamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9365958BE1300369A8B76A5 /* Pods_FirebaseExamples.framework */; };
+		96F3BB1121B5EFCA00C5348D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3BB1021B5EFCA00C5348D /* WelcomeViewController.swift */; };
+		96F3BB1421B5F5DF00C5348D /* mainmenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3BB1321B5F5DF00C5348D /* mainmenuViewController.swift */; };
+		96F3BB1621B5F62700C5348D /* SelectPokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3BB1521B5F62700C5348D /* SelectPokemonViewController.swift */; };
+		96F3BB1821B5F66200C5348D /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3BB1721B5F66200C5348D /* AboutUsViewController.swift */; };
+		96F3BB1C21B5F6AE00C5348D /* MapViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3BB1B21B5F6AE00C5348D /* MapViewViewController.swift */; };
+		96F3BB2021B5F70B00C5348D /* ScoreboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3BB1F21B5F70B00C5348D /* ScoreboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +37,12 @@
 		406B5484B6981C5FB965C001 /* Pods-FirebaseExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseExamples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseExamples/Pods-FirebaseExamples.debug.xcconfig"; sourceTree = "<group>"; };
 		6CEA004C21B34F3800E3644F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		90FB973C365E343C8D667460 /* Pods-FirebaseExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseExamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseExamples/Pods-FirebaseExamples.release.xcconfig"; sourceTree = "<group>"; };
+		96F3BB1021B5EFCA00C5348D /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		96F3BB1321B5F5DF00C5348D /* mainmenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainmenuViewController.swift; sourceTree = "<group>"; };
+		96F3BB1521B5F62700C5348D /* SelectPokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPokemonViewController.swift; sourceTree = "<group>"; };
+		96F3BB1721B5F66200C5348D /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		96F3BB1B21B5F6AE00C5348D /* MapViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewViewController.swift; path = "/Users/tejas/Desktop/projectiOS/Pokemon/jenelleteaches-firebaseexamples-8f761c9ee2ef-2/FirebaseExamples/View Controllers/MapViewViewController.swift"; sourceTree = "<absolute>"; };
+		96F3BB1F21B5F70B00C5348D /* ScoreboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScoreboardViewController.swift; path = "/Users/tejas/Desktop/projectiOS/Pokemon/jenelleteaches-firebaseexamples-8f761c9ee2ef-2/FirebaseExamples/View Controllers/ScoreboardViewController.swift"; sourceTree = "<absolute>"; };
 		E9365958BE1300369A8B76A5 /* Pods_FirebaseExamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseExamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -68,16 +80,30 @@
 		055EF05221A09A6E006A4DF6 /* FirebaseExamples */ = {
 			isa = PBXGroup;
 			children = (
+				96F3BB1221B5EFD100C5348D /* View Controllers */,
 				055EF05321A09A6E006A4DF6 /* AppDelegate.swift */,
-				055EF05521A09A6E006A4DF6 /* ViewController.swift */,
 				055EF05721A09A6E006A4DF6 /* Main.storyboard */,
-				050803A821A20E5500CE1328 /* HomeScreenViewController.swift */,
 				055EF05A21A09A6E006A4DF6 /* Assets.xcassets */,
 				6CEA004C21B34F3800E3644F /* GoogleService-Info.plist */,
 				055EF05C21A09A6E006A4DF6 /* LaunchScreen.storyboard */,
 				055EF05F21A09A6E006A4DF6 /* Info.plist */,
 			);
 			path = FirebaseExamples;
+			sourceTree = "<group>";
+		};
+		96F3BB1221B5EFD100C5348D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				96F3BB1021B5EFCA00C5348D /* WelcomeViewController.swift */,
+				055EF05521A09A6E006A4DF6 /* ViewController.swift */,
+				050803A821A20E5500CE1328 /* HomeScreenViewController.swift */,
+				96F3BB1321B5F5DF00C5348D /* mainmenuViewController.swift */,
+				96F3BB1521B5F62700C5348D /* SelectPokemonViewController.swift */,
+				96F3BB1721B5F66200C5348D /* AboutUsViewController.swift */,
+				96F3BB1B21B5F6AE00C5348D /* MapViewViewController.swift */,
+				96F3BB1F21B5F70B00C5348D /* ScoreboardViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		ECE44C449392EF85F18530CD /* Pods */ = {
@@ -283,7 +309,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96F3BB1C21B5F6AE00C5348D /* MapViewViewController.swift in Sources */,
+				96F3BB2021B5F70B00C5348D /* ScoreboardViewController.swift in Sources */,
+				96F3BB1421B5F5DF00C5348D /* mainmenuViewController.swift in Sources */,
 				055EF05621A09A6E006A4DF6 /* ViewController.swift in Sources */,
+				96F3BB1621B5F62700C5348D /* SelectPokemonViewController.swift in Sources */,
+				96F3BB1121B5EFCA00C5348D /* WelcomeViewController.swift in Sources */,
+				96F3BB1821B5F66200C5348D /* AboutUsViewController.swift in Sources */,
 				055EF05421A09A6E006A4DF6 /* AppDelegate.swift in Sources */,
 				050803A921A20E5500CE1328 /* HomeScreenViewController.swift in Sources */,
 			);

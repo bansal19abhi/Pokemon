@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/tejas/Desktop/projectiOS/Pokemon/jenelleteaches-firebaseexamples-8f761c9ee2ef-2/FirebaseExamples/View Controllers/ScoreboardViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/tejas/Desktop/projectiOS/Pokemon/jenelleteaches-firebaseexamples-8f761c9ee2ef-2/FirebaseExamples/View Controllers/MapViewViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:FirebaseExamples.xcodeproj">
    </FileRef>
    <FileRef
