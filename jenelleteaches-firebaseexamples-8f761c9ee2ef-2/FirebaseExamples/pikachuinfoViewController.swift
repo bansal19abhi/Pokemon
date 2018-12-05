@@ -1,14 +1,14 @@
 //
-//  SelectPokemonViewController.swift
+//  pikachuinfoViewController.swift
 //  FirebaseExamples
 //
-//  Created by Tejas Jadhav on 2018-12-03.
+//  Created by Tejas Jadhav on 2018-12-05.
 //  Copyright © 2018 room1. All rights reserved.
 //
 
 import UIKit
 
-class SelectPokemonViewController: UIViewController {
+class pikachuinfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,22 +16,7 @@ class SelectPokemonViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func pikachupressed(_ sender: Any) {
-    }
-    
-    @IBAction func eeveepressed(_ sender: Any) {
-    }
-    
-    @IBAction func charmanderpressed(_ sender: Any) {
-    }
-    
-    @IBAction func squirtlepressed(_ sender: Any) {
-    }
-    
-    @IBAction func bulbasaurpressed(_ sender: Any) {
-    }
-    
-    
+
     /*
     // MARK: - Navigation
 

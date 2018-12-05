@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Z1G-S6-omr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Z74-j5-x1c">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -59,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTo-xx-SPe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="197.59999999999999" y="116.49175412293854"/>
+            <point key="canvasLocation" x="199" y="109"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -169,7 +169,7 @@
         <!--Selectpokemon View Controller-->
         <scene sceneID="cXS-cT-B50">
             <objects>
-                <viewController id="Kr9-Qq-h3O" customClass="selectpokemonViewController" customModule="projectiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Kr9-Qq-h3O" customClass="selectpokemonViewController" customModule="FirebaseExamples" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bdv-kJ-Rex">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,6 +186,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Pikachu"/>
                                 <connections>
+                                    <action selector="pikachupressed:" destination="Kr9-Qq-h3O" eventType="touchUpInside" id="1qh-vs-11g"/>
                                     <action selector="poki1button:" destination="Kr9-Qq-h3O" eventType="touchUpInside" id="HZT-eF-dXA"/>
                                 </connections>
                             </button>
@@ -193,16 +194,25 @@
                                 <rect key="frame" x="167" y="283" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Eevee"/>
+                                <connections>
+                                    <action selector="eeveepressed:" destination="Kr9-Qq-h3O" eventType="touchUpInside" id="FHo-J5-57M"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aH-3t-iFA">
                                 <rect key="frame" x="145" y="345" width="86" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Charmander"/>
+                                <connections>
+                                    <action selector="charmanderpressed:" destination="Kr9-Qq-h3O" eventType="touchUpInside" id="fcq-mZ-0nm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ed7-ga-6hv">
                                 <rect key="frame" x="161" y="411" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Squirtle"/>
+                                <connections>
+                                    <action selector="squirtlepressed:" destination="Kr9-Qq-h3O" eventType="touchUpInside" id="MpB-jS-8FN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFa-i3-2xP">
                                 <rect key="frame" x="33" y="20" width="34" height="30"/>
@@ -213,18 +223,161 @@
                                 <rect key="frame" x="154" y="474" width="69" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Bulbasaur"/>
+                                <connections>
+                                    <action selector="bulbasaurpressed:" destination="Kr9-Qq-h3O" eventType="touchUpInside" id="tnF-8z-z66"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="VMk-Gn-Aa0"/>
                     </view>
                     <connections>
-                        <segue destination="MJO-0A-Xuf" kind="show" identifier="selecttomap" id="C7t-qi-hb9"/>
+                        <segue destination="Mcq-Mq-1Zg" kind="show" identifier="pokiinfo" id="aZm-Zi-5st"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dv2-aJ-3Ai" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="958" y="1821"/>
+        </scene>
+        <!--Pikachuinfo View Controller-->
+        <scene sceneID="TnJ-GY-C8l">
+            <objects>
+                <viewController id="Mcq-Mq-1Zg" customClass="pikachuinfoViewController" customModule="FirebaseExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SE0-Ra-tcn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pikachu.png" translatesAutoresizingMaskIntoConstraints="NO" id="vAX-vb-HPh">
+                                <rect key="frame" x="16" y="101" width="343" height="279"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pikachu Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3e-WA-vWE">
+                                <rect key="frame" x="129" y="49" width="117" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="SN6-rQ-x7X"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2M2-VZ-aOx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1728.8" y="1819.3403298350827"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pLs-s2-aI3">
+            <objects>
+                <viewController id="AcT-UI-eRb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oQc-A9-ju9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eevee Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdx-zT-2YZ">
+                                <rect key="frame" x="136" y="46" width="103" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Eevee.png" translatesAutoresizingMaskIntoConstraints="NO" id="m9r-H8-Qml">
+                                <rect key="frame" x="16" y="89" width="343" height="285"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Qzy-Kv-P4c"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qrj-10-2cj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2488.8000000000002" y="1819.3403298350827"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XDs-bi-aBW">
+            <objects>
+                <viewController id="eW1-2E-gbE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oh7-0e-gmI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Charmander.png" translatesAutoresizingMaskIntoConstraints="NO" id="AYG-GV-bgd">
+                                <rect key="frame" x="16" y="96" width="343" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Charmander Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXR-y2-jZ5">
+                                <rect key="frame" x="111" y="54" width="152" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2o7-fe-woU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PYj-fV-QMv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957.60000000000002" y="2540.7796101949029"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Zwx-O2-tZl">
+            <objects>
+                <viewController id="NKV-hY-8PA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BpQ-Gp-VVc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Squirtle Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kd8-2c-ptt">
+                                <rect key="frame" x="129" y="47" width="116" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Squirtle.png" translatesAutoresizingMaskIntoConstraints="NO" id="dBu-Pe-cyk">
+                                <rect key="frame" x="16" y="76" width="343" height="297"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Y6b-Oz-sZB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Di2-un-43J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1728.8" y="2540.7796101949029"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wc0-Kv-5vx">
+            <objects>
+                <viewController id="Esz-eF-M0O" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hHb-4L-vPi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bulbasaur.png" translatesAutoresizingMaskIntoConstraints="NO" id="V2g-wo-rnO">
+                                <rect key="frame" x="16" y="71" width="343" height="278"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Balbasaur Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLh-Ej-R2C">
+                                <rect key="frame" x="121" y="42" width="133" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="tE3-Ug-pNJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HBI-ZP-arQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2488.8000000000002" y="2541.6791604197902"/>
         </scene>
         <!--Mainmenu View Controller-->
         <scene sceneID="FFr-NH-YNf">
@@ -292,7 +445,7 @@
         <!--Aboutus View Controller-->
         <scene sceneID="Hzj-Nk-wgI">
             <objects>
-                <viewController id="CSh-Yu-yek" customClass="aboutusViewController" customModule="projectiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CSh-Yu-yek" customClass="aboutusViewController" customModule="FirebaseExamples" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="672-MV-pCp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -347,7 +500,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TUv-SW-vQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="958" y="2634"/>
+            <point key="canvasLocation" x="86" y="2511"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="EhA-61-U9R">
@@ -379,12 +532,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cO0-Tf-Nf2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1823" y="1822"/>
+            <point key="canvasLocation" x="86" y="1820"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="t7d-LS-1Wh">
             <objects>
-                <viewController id="MJO-0A-Xuf" customClass="MapViewController" customModule="projectiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="MJO-0A-Xuf" customClass="MapViewController" customModule="FirebaseExamples" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T6b-cH-tTK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -427,24 +580,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogd-h1-5a7">
-                                <rect key="frame" x="71" y="527" width="57" height="30"/>
+                                <rect key="frame" x="69" y="540" width="57" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Enemy 1"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wqp-8I-rKB">
-                                <rect key="frame" x="69" y="588" width="60" height="30"/>
+                                <rect key="frame" x="69" y="603" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Enemy 3"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Fm-wY-BXX">
-                                <rect key="frame" x="223" y="527" width="59" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Enemy 2"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdT-2M-07w">
-                                <rect key="frame" x="222" y="588" width="60" height="30"/>
+                                <rect key="frame" x="223" y="603" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Enemy 4"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Fm-wY-BXX">
+                                <rect key="frame" x="223" y="540" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Enemy 2"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -480,10 +633,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hPL-1y-nuK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2600" y="956"/>
+            <point key="canvasLocation" x="2602" y="949"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Bulbasaur.png" width="300" height="300"/>
+        <image name="Charmander.png" width="300" height="300"/>
+        <image name="Eevee.png" width="300" height="300"/>
+        <image name="Pikachu.png" width="300" height="300"/>
+        <image name="Squirtle.png" width="300" height="300"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hg6-v6-DiC"/>
+        <segue reference="Bhr-zv-0a3"/>
     </inferredMetricsTieBreakers>
 </document>

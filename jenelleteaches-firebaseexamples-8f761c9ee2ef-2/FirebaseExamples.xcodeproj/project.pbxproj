@@ -14,8 +14,14 @@
 		055EF05B21A09A6E006A4DF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 055EF05A21A09A6E006A4DF6 /* Assets.xcassets */; };
 		055EF05E21A09A6E006A4DF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055EF05C21A09A6E006A4DF6 /* LaunchScreen.storyboard */; };
 		05A8E02B21A24A1F00BEB0A4 /* MessageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05A8E02C21A24A1F00BEB0A4 /* MessageKit.framework */; };
-		6CEA004D21B34F3800E3644F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CEA004C21B34F3800E3644F /* GoogleService-Info.plist */; };
 		88E408ECB5D946105F76F326 /* Pods_FirebaseExamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9365958BE1300369A8B76A5 /* Pods_FirebaseExamples.framework */; };
+		964765E521B836DE00D00FF3 /* pikachuinfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964765E421B836DE00D00FF3 /* pikachuinfoViewController.swift */; };
+		964765E921B8498600D00FF3 /* Pikachu.png in Resources */ = {isa = PBXBuildFile; fileRef = 964765E821B8498600D00FF3 /* Pikachu.png */; };
+		964765EB21B849EE00D00FF3 /* Eevee.png in Resources */ = {isa = PBXBuildFile; fileRef = 964765EA21B849EE00D00FF3 /* Eevee.png */; };
+		964765ED21B84A6000D00FF3 /* Charmander.png in Resources */ = {isa = PBXBuildFile; fileRef = 964765EC21B84A6000D00FF3 /* Charmander.png */; };
+		964765EF21B84ABB00D00FF3 /* Squirtle.png in Resources */ = {isa = PBXBuildFile; fileRef = 964765EE21B84ABB00D00FF3 /* Squirtle.png */; };
+		964765F121B84B6100D00FF3 /* Bulbasaur.png in Resources */ = {isa = PBXBuildFile; fileRef = 964765F021B84B6100D00FF3 /* Bulbasaur.png */; };
+		96AB46B921B6EBFC0019EF5E /* GoogleService-Info 12.06.06 PM.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96AB46B821B6EBFC0019EF5E /* GoogleService-Info 12.06.06 PM.plist */; };
 		96F3BB1121B5EFCA00C5348D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3BB1021B5EFCA00C5348D /* WelcomeViewController.swift */; };
 		96F3BB1421B5F5DF00C5348D /* mainmenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3BB1321B5F5DF00C5348D /* mainmenuViewController.swift */; };
 		96F3BB1621B5F62700C5348D /* SelectPokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3BB1521B5F62700C5348D /* SelectPokemonViewController.swift */; };
@@ -36,8 +42,14 @@
 		055EF05F21A09A6E006A4DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05A8E02C21A24A1F00BEB0A4 /* MessageKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MessageKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		406B5484B6981C5FB965C001 /* Pods-FirebaseExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseExamples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseExamples/Pods-FirebaseExamples.debug.xcconfig"; sourceTree = "<group>"; };
-		6CEA004C21B34F3800E3644F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		90FB973C365E343C8D667460 /* Pods-FirebaseExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseExamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseExamples/Pods-FirebaseExamples.release.xcconfig"; sourceTree = "<group>"; };
+		964765E421B836DE00D00FF3 /* pikachuinfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pikachuinfoViewController.swift; sourceTree = "<group>"; };
+		964765E821B8498600D00FF3 /* Pikachu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pikachu.png; sourceTree = "<group>"; };
+		964765EA21B849EE00D00FF3 /* Eevee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Eevee.png; sourceTree = "<group>"; };
+		964765EC21B84A6000D00FF3 /* Charmander.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Charmander.png; sourceTree = "<group>"; };
+		964765EE21B84ABB00D00FF3 /* Squirtle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Squirtle.png; sourceTree = "<group>"; };
+		964765F021B84B6100D00FF3 /* Bulbasaur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bulbasaur.png; sourceTree = "<group>"; };
+		96AB46B821B6EBFC0019EF5E /* GoogleService-Info 12.06.06 PM.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info 12.06.06 PM.plist"; path = "../../../../../Downloads/GoogleService-Info 12.06.06 PM.plist"; sourceTree = "<group>"; };
 		96F3BB1021B5EFCA00C5348D /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		96F3BB1321B5F5DF00C5348D /* mainmenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainmenuViewController.swift; sourceTree = "<group>"; };
 		96F3BB1521B5F62700C5348D /* SelectPokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPokemonViewController.swift; sourceTree = "<group>"; };
@@ -82,15 +94,29 @@
 		055EF05221A09A6E006A4DF6 /* FirebaseExamples */ = {
 			isa = PBXGroup;
 			children = (
+				964765E721B8496200D00FF3 /* images */,
 				96F3BB1221B5EFD100C5348D /* View Controllers */,
 				055EF05321A09A6E006A4DF6 /* AppDelegate.swift */,
+				96AB46B821B6EBFC0019EF5E /* GoogleService-Info 12.06.06 PM.plist */,
 				055EF05721A09A6E006A4DF6 /* Main.storyboard */,
+				964765E421B836DE00D00FF3 /* pikachuinfoViewController.swift */,
 				055EF05A21A09A6E006A4DF6 /* Assets.xcassets */,
-				6CEA004C21B34F3800E3644F /* GoogleService-Info.plist */,
 				055EF05C21A09A6E006A4DF6 /* LaunchScreen.storyboard */,
 				055EF05F21A09A6E006A4DF6 /* Info.plist */,
 			);
 			path = FirebaseExamples;
+			sourceTree = "<group>";
+		};
+		964765E721B8496200D00FF3 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				964765EA21B849EE00D00FF3 /* Eevee.png */,
+				964765E821B8498600D00FF3 /* Pikachu.png */,
+				964765EC21B84A6000D00FF3 /* Charmander.png */,
+				964765EE21B84ABB00D00FF3 /* Squirtle.png */,
+				964765F021B84B6100D00FF3 /* Bulbasaur.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		96F3BB1221B5EFD100C5348D /* View Controllers */ = {
@@ -189,10 +215,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				964765EF21B84ABB00D00FF3 /* Squirtle.png in Resources */,
+				964765EB21B849EE00D00FF3 /* Eevee.png in Resources */,
 				055EF05E21A09A6E006A4DF6 /* LaunchScreen.storyboard in Resources */,
-				6CEA004D21B34F3800E3644F /* GoogleService-Info.plist in Resources */,
+				964765F121B84B6100D00FF3 /* Bulbasaur.png in Resources */,
+				96AB46B921B6EBFC0019EF5E /* GoogleService-Info 12.06.06 PM.plist in Resources */,
 				055EF05B21A09A6E006A4DF6 /* Assets.xcassets in Resources */,
 				055EF05921A09A6E006A4DF6 /* Main.storyboard in Resources */,
+				964765ED21B84A6000D00FF3 /* Charmander.png in Resources */,
+				964765E921B8498600D00FF3 /* Pikachu.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +353,7 @@
 				96F3BB1821B5F66200C5348D /* AboutUsViewController.swift in Sources */,
 				055EF05421A09A6E006A4DF6 /* AppDelegate.swift in Sources */,
 				050803A921A20E5500CE1328 /* HomeScreenViewController.swift in Sources */,
+				964765E521B836DE00D00FF3 /* pikachuinfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
