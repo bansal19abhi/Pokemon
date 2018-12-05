@@ -21,6 +21,11 @@
 		964765ED21B84A6000D00FF3 /* Charmander.png in Resources */ = {isa = PBXBuildFile; fileRef = 964765EC21B84A6000D00FF3 /* Charmander.png */; };
 		964765EF21B84ABB00D00FF3 /* Squirtle.png in Resources */ = {isa = PBXBuildFile; fileRef = 964765EE21B84ABB00D00FF3 /* Squirtle.png */; };
 		964765F121B84B6100D00FF3 /* Bulbasaur.png in Resources */ = {isa = PBXBuildFile; fileRef = 964765F021B84B6100D00FF3 /* Bulbasaur.png */; };
+		964765F321B84D8400D00FF3 /* PikachuScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964765F221B84D8400D00FF3 /* PikachuScreenViewController.swift */; };
+		964765F521B84DAB00D00FF3 /* EeveeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964765F421B84DAB00D00FF3 /* EeveeScreenViewController.swift */; };
+		964765F721B84DC900D00FF3 /* CharmanderScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964765F621B84DC900D00FF3 /* CharmanderScreenViewController.swift */; };
+		964765F921B84DE400D00FF3 /* SquirtleScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964765F821B84DE400D00FF3 /* SquirtleScreenViewController.swift */; };
+		964765FB21B84E6C00D00FF3 /* BalbasaurScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964765FA21B84E6C00D00FF3 /* BalbasaurScreenViewController.swift */; };
 		96AB46B921B6EBFC0019EF5E /* GoogleService-Info 12.06.06 PM.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96AB46B821B6EBFC0019EF5E /* GoogleService-Info 12.06.06 PM.plist */; };
 		96F3BB1121B5EFCA00C5348D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3BB1021B5EFCA00C5348D /* WelcomeViewController.swift */; };
 		96F3BB1421B5F5DF00C5348D /* mainmenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3BB1321B5F5DF00C5348D /* mainmenuViewController.swift */; };
@@ -49,6 +54,11 @@
 		964765EC21B84A6000D00FF3 /* Charmander.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Charmander.png; sourceTree = "<group>"; };
 		964765EE21B84ABB00D00FF3 /* Squirtle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Squirtle.png; sourceTree = "<group>"; };
 		964765F021B84B6100D00FF3 /* Bulbasaur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bulbasaur.png; sourceTree = "<group>"; };
+		964765F221B84D8400D00FF3 /* PikachuScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PikachuScreenViewController.swift; sourceTree = "<group>"; };
+		964765F421B84DAB00D00FF3 /* EeveeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EeveeScreenViewController.swift; sourceTree = "<group>"; };
+		964765F621B84DC900D00FF3 /* CharmanderScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharmanderScreenViewController.swift; sourceTree = "<group>"; };
+		964765F821B84DE400D00FF3 /* SquirtleScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquirtleScreenViewController.swift; sourceTree = "<group>"; };
+		964765FA21B84E6C00D00FF3 /* BalbasaurScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalbasaurScreenViewController.swift; sourceTree = "<group>"; };
 		96AB46B821B6EBFC0019EF5E /* GoogleService-Info 12.06.06 PM.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info 12.06.06 PM.plist"; path = "../../../../../Downloads/GoogleService-Info 12.06.06 PM.plist"; sourceTree = "<group>"; };
 		96F3BB1021B5EFCA00C5348D /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		96F3BB1321B5F5DF00C5348D /* mainmenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainmenuViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +132,11 @@
 		96F3BB1221B5EFD100C5348D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				964765FA21B84E6C00D00FF3 /* BalbasaurScreenViewController.swift */,
+				964765F821B84DE400D00FF3 /* SquirtleScreenViewController.swift */,
+				964765F621B84DC900D00FF3 /* CharmanderScreenViewController.swift */,
+				964765F421B84DAB00D00FF3 /* EeveeScreenViewController.swift */,
+				964765F221B84D8400D00FF3 /* PikachuScreenViewController.swift */,
 				96F3BB1021B5EFCA00C5348D /* WelcomeViewController.swift */,
 				055EF05521A09A6E006A4DF6 /* ViewController.swift */,
 				050803A821A20E5500CE1328 /* HomeScreenViewController.swift */,
@@ -343,14 +358,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				964765F521B84DAB00D00FF3 /* EeveeScreenViewController.swift in Sources */,
 				96F3BB1C21B5F6AE00C5348D /* MapViewViewController.swift in Sources */,
 				96F3BB2021B5F70B00C5348D /* ScoreboardViewController.swift in Sources */,
 				96F3BB1421B5F5DF00C5348D /* mainmenuViewController.swift in Sources */,
 				96F3BB2221B6005A00C5348D /* FightScreenViewController.swift in Sources */,
 				055EF05621A09A6E006A4DF6 /* ViewController.swift in Sources */,
 				96F3BB1621B5F62700C5348D /* SelectPokemonViewController.swift in Sources */,
+				964765F721B84DC900D00FF3 /* CharmanderScreenViewController.swift in Sources */,
 				96F3BB1121B5EFCA00C5348D /* WelcomeViewController.swift in Sources */,
 				96F3BB1821B5F66200C5348D /* AboutUsViewController.swift in Sources */,
+				964765FB21B84E6C00D00FF3 /* BalbasaurScreenViewController.swift in Sources */,
+				964765F321B84D8400D00FF3 /* PikachuScreenViewController.swift in Sources */,
+				964765F921B84DE400D00FF3 /* SquirtleScreenViewController.swift in Sources */,
 				055EF05421A09A6E006A4DF6 /* AppDelegate.swift in Sources */,
 				050803A921A20E5500CE1328 /* HomeScreenViewController.swift in Sources */,
 				964765E521B836DE00D00FF3 /* pikachuinfoViewController.swift in Sources */,

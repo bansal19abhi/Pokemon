@@ -1,5 +1,5 @@
 //
-//  pikachuinfoViewController.swift
+//  SquirtleScreenViewController.swift
 //  FirebaseExamples
 //
 //  Created by Tejas Jadhav on 2018-12-05.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class pikachuinfoViewController: UIViewController {
+class SquirtleScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,8 +16,8 @@ class pikachuinfoViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func pickachuselect(_ sender: Any) {
-        performSegue(withIdentifier: "pikachutomap", sender: self)
+    @IBAction func squirtleselect(_ sender: Any) {
+        performSegue(withIdentifier: "squirtletomap", sender: self)
     }
     
     /*
