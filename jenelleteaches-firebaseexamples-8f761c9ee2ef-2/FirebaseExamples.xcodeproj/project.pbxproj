@@ -109,7 +109,6 @@
 				055EF05321A09A6E006A4DF6 /* AppDelegate.swift */,
 				96AB46B821B6EBFC0019EF5E /* GoogleService-Info.plist */,
 				055EF05721A09A6E006A4DF6 /* Main.storyboard */,
-				964765E421B836DE00D00FF3 /* pikachuinfoViewController.swift */,
 				055EF05A21A09A6E006A4DF6 /* Assets.xcassets */,
 				055EF05C21A09A6E006A4DF6 /* LaunchScreen.storyboard */,
 				055EF05F21A09A6E006A4DF6 /* Info.plist */,
@@ -146,6 +145,7 @@
 				96F3BB1B21B5F6AE00C5348D /* MapViewViewController.swift */,
 				96F3BB1F21B5F70B00C5348D /* ScoreboardViewController.swift */,
 				96F3BB2121B6005A00C5348D /* FightScreenViewController.swift */,
+				964765E421B836DE00D00FF3 /* pikachuinfoViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
