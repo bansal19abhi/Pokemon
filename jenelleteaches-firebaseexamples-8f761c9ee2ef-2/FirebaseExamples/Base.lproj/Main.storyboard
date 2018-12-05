@@ -233,6 +233,10 @@
                     </view>
                     <connections>
                         <segue destination="Mcq-Mq-1Zg" kind="show" identifier="pokiinfo" id="aZm-Zi-5st"/>
+                        <segue destination="AcT-UI-eRb" kind="show" identifier="selecttoeevee" id="Qco-fB-2cG"/>
+                        <segue destination="eW1-2E-gbE" kind="show" identifier="selecttocharmander" id="3GV-E8-9K6"/>
+                        <segue destination="NKV-hY-8PA" kind="show" identifier="selecttosquirtle" id="sQF-Tx-Ft5"/>
+                        <segue destination="Esz-eF-M0O" kind="show" identifier="selecttobalbasaur" id="cFi-rm-fDO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dv2-aJ-3Ai" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -595,7 +599,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TUv-SW-vQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="86" y="2511"/>
+            <point key="canvasLocation" x="86" y="2542"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="EhA-61-U9R">
@@ -739,8 +743,9 @@
         <image name="Squirtle.png" width="300" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eiI-tp-AJV"/>
+        <segue reference="aZm-Zi-5st"/>
+        <segue reference="l9H-qR-xQ8"/>
         <segue reference="Bhr-zv-0a3"/>
-        <segue reference="ih4-oW-CgH"/>
+        <segue reference="Qyb-4e-MXu"/>
     </inferredMetricsTieBreakers>
 </document>

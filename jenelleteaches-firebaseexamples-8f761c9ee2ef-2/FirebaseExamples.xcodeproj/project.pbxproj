@@ -26,7 +26,7 @@
 		964765F721B84DC900D00FF3 /* CharmanderScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964765F621B84DC900D00FF3 /* CharmanderScreenViewController.swift */; };
 		964765F921B84DE400D00FF3 /* SquirtleScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964765F821B84DE400D00FF3 /* SquirtleScreenViewController.swift */; };
 		964765FB21B84E6C00D00FF3 /* BalbasaurScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964765FA21B84E6C00D00FF3 /* BalbasaurScreenViewController.swift */; };
-		96AB46B921B6EBFC0019EF5E /* GoogleService-Info 12.06.06 PM.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96AB46B821B6EBFC0019EF5E /* GoogleService-Info 12.06.06 PM.plist */; };
+		96AB46B921B6EBFC0019EF5E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96AB46B821B6EBFC0019EF5E /* GoogleService-Info.plist */; };
 		96F3BB1121B5EFCA00C5348D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3BB1021B5EFCA00C5348D /* WelcomeViewController.swift */; };
 		96F3BB1421B5F5DF00C5348D /* mainmenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3BB1321B5F5DF00C5348D /* mainmenuViewController.swift */; };
 		96F3BB1621B5F62700C5348D /* SelectPokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3BB1521B5F62700C5348D /* SelectPokemonViewController.swift */; };
@@ -59,7 +59,7 @@
 		964765F621B84DC900D00FF3 /* CharmanderScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharmanderScreenViewController.swift; sourceTree = "<group>"; };
 		964765F821B84DE400D00FF3 /* SquirtleScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquirtleScreenViewController.swift; sourceTree = "<group>"; };
 		964765FA21B84E6C00D00FF3 /* BalbasaurScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalbasaurScreenViewController.swift; sourceTree = "<group>"; };
-		96AB46B821B6EBFC0019EF5E /* GoogleService-Info 12.06.06 PM.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info 12.06.06 PM.plist"; path = "../../../../../Downloads/GoogleService-Info 12.06.06 PM.plist"; sourceTree = "<group>"; };
+		96AB46B821B6EBFC0019EF5E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		96F3BB1021B5EFCA00C5348D /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		96F3BB1321B5F5DF00C5348D /* mainmenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainmenuViewController.swift; sourceTree = "<group>"; };
 		96F3BB1521B5F62700C5348D /* SelectPokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPokemonViewController.swift; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 				964765E721B8496200D00FF3 /* images */,
 				96F3BB1221B5EFD100C5348D /* View Controllers */,
 				055EF05321A09A6E006A4DF6 /* AppDelegate.swift */,
-				96AB46B821B6EBFC0019EF5E /* GoogleService-Info 12.06.06 PM.plist */,
+				96AB46B821B6EBFC0019EF5E /* GoogleService-Info.plist */,
 				055EF05721A09A6E006A4DF6 /* Main.storyboard */,
 				964765E421B836DE00D00FF3 /* pikachuinfoViewController.swift */,
 				055EF05A21A09A6E006A4DF6 /* Assets.xcassets */,
@@ -234,7 +234,7 @@
 				964765EB21B849EE00D00FF3 /* Eevee.png in Resources */,
 				055EF05E21A09A6E006A4DF6 /* LaunchScreen.storyboard in Resources */,
 				964765F121B84B6100D00FF3 /* Bulbasaur.png in Resources */,
-				96AB46B921B6EBFC0019EF5E /* GoogleService-Info 12.06.06 PM.plist in Resources */,
+				96AB46B921B6EBFC0019EF5E /* GoogleService-Info.plist in Resources */,
 				055EF05B21A09A6E006A4DF6 /* Assets.xcassets in Resources */,
 				055EF05921A09A6E006A4DF6 /* Main.storyboard in Resources */,
 				964765ED21B84A6000D00FF3 /* Charmander.png in Resources */,

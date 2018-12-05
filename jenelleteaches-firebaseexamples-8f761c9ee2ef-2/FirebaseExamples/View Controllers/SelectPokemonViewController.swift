@@ -17,18 +17,23 @@ class SelectPokemonViewController: UIViewController {
     }
     
     @IBAction func pikachupressed(_ sender: Any) {
+        performSegue(withIdentifier: "pokiinfo", sender: self)
     }
     
     @IBAction func eeveepressed(_ sender: Any) {
+        performSegue(withIdentifier: "selecttoeevee", sender: self)
     }
     
     @IBAction func charmanderpressed(_ sender: Any) {
+        performSegue(withIdentifier: "selecttocharmander", sender: self)
     }
     
     @IBAction func squirtlepressed(_ sender: Any) {
+        performSegue(withIdentifier: "selecttosquirtle", sender: self)
     }
     
     @IBAction func bulbasaurpressed(_ sender: Any) {
+        performSegue(withIdentifier: "selecttobalbasaur", sender: self)
     }
     
     
